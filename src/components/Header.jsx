@@ -3,19 +3,39 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav>
-      <ul>
+    <nav className="bg-blue-600 p-4">
+      <ul className="flex justify-center space-x-8">
         <li>
-          <Link to="/">Indonesia</Link>
+          <Link
+            to="/"
+            className="text-white text-lg font-semibold hover:text-gray-300 transition"
+          >
+            Indonesia
+          </Link>
         </li>
         <li>
-          <Link to="/programming">Programming</Link>
+          <Link
+            to="/programming"
+            className="text-white text-lg font-semibold hover:text-gray-300 transition"
+          >
+            Programming
+          </Link>
         </li>
         <li>
-          <Link to="/saved">Saved</Link>
+          <Link
+            to="/saved"
+            className="text-white text-lg font-semibold hover:text-gray-300 transition"
+          >
+            Saved
+          </Link>
         </li>
         <li>
-          <Link to="/search">Search</Link>
+          <Link
+            to="/search"
+            className="text-white text-lg font-semibold hover:text-gray-300 transition"
+          >
+            Search
+          </Link>
         </li>
       </ul>
     </nav>
